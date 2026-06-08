@@ -1,3 +1,29 @@
+"""
+Modelo directo 
+
+==============================================================================
+Objetivo:
+    Crear la respuesta de aceleración gravimétrica (componente vertical) ocacionadas por dos esferas. siguiendo las ecuaciones planteadas por 
+    Telford et al. (1990) — Applied Geophysics, Cap. 6.
+
+Parámetros  (8 en total — 4 por esfera):
+    R₁, R₂   — radio de cada esfera [m]
+    ρ₁, ρ₂   — contraste de densidad de cada esfera [kg/m³]
+    Z₁, Z₂   — profundidad del centro de cada esfera [m]
+    Xc₁, Xc₂ — posición lateral del centro de cada esfera [m]
+
+
+Autor: Rolando Álvarez Gómez
+Fecha: ultima actualización 2024
+La idea central de este trabjo surgió de la notas del curso de Inversión de Datos Geofísicos del semestre 2022-1 
+a cargo del Dr. Mauricio Nava Flores.
+
+UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO
+FACULTAD DE INGENIERÍA
+DIVISIÓN DE INGENIERÍA EN CIENCIAS DE LA TIERRA
+DEPARTAMENTO DE GEOFÍSICA
+"""
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
