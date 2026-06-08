@@ -42,19 +42,19 @@ Al igual que en el entrenamiento de redes neuronales profundas, es crucial audit
 ### 2. Estabilidad de los Parámetros (Epochs)
 El rastreo de la evolución de las estimaciones asegura que el modelo ha alcanzado un estado de convergencia estable, garantizando que el *Global Best* (la mejor solución histórica) sea confiable.
 
-![Evolución de Parámetros](img/04_evolucion_parametros.jpg)
+![Evolución de Parámetros](img/04_evolucion_parametros.png)
 
 ### 3. Modelo Predictivo vs. Datos Observados
 El resultado final muestra el excelente ajuste del optimizador. La señal original fue descompuesta matemáticamente con éxito en dos fuentes subyacentes distintas, logrando una reconstrucción fiel con residuales mínimos y centrados en cero.
 
-![Ajuste Final y Residuales](img/02_modelo_final.jpg)
+![Ajuste Final y Residuales](img/02_modelo_final.png)
 
-(Alternativamente, puedes usar tu primera gráfica combinada)*
+
 ![Ajuste Exploratorio](img/01_ajuste_exploracion.png)
 
 ---
 
-## 💻 Reproducibilidad y Arquitectura del Código
+## Reproducibilidad y Arquitectura del Código
 
 El código se desarrolló aplicando principios de programación orientada a objetos (OOP) para asegurar su modularidad y escalabilidad en pipelines de datos más grandes.
 
