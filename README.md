@@ -47,10 +47,11 @@ El rastreo de la evolución de las estimaciones asegura que el modelo ha alcanza
 ### 3. Modelo Predictivo vs. Datos Observados
 El resultado final muestra el excelente ajuste del optimizador. La señal original fue descompuesta matemáticamente con éxito en dos fuentes subyacentes distintas, logrando una reconstrucción fiel con residuales mínimos y centrados en cero.
 
-![Ajuste Final y Residuales](img/02_modelo_final.png)
-
-
 ![Ajuste Exploratorio](img/01_ajuste_exploracion.png)
+
+
+
+![Ajuste Final y Residuales](img/02_modelo_final.png)
 
 ---
 
