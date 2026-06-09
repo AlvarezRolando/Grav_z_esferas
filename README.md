@@ -62,10 +62,13 @@ El código se desarrolló aplicando principios de programación orientada a obje
 **Estructura del pipeline:**
 ```python
 # 1. Definición de límites del espacio de búsqueda (Boundaries)
-param_bounds = [(50, 1000), (500, 2500), (110, 1000), (-1000, 0)] * 2
+                  #R1      Rho1     Z1     Xc1      R2      Rho2      Z2      Xc2
+P_MIN = np.array([  100,    250,    110,    -1000,  100,    250,     110,      0])
+P_MAX = np.array([  500,    2000,   500,      0,   500,    2000,    500,   1000])
 
-# 2. Instanciación del optimizador
-optimizer = GravimetricInversionPSO(num_particles=30, max_iter=200)
+# Respuesta Esperada (el optimizador encontró la respuesta correcta)
+Esfera 1:   #R1      Rho1     Z1     Xc1      
+        ([  150,     1200,    300,    -500])
 
-# 3. Entrenamiento (Minimización del SSE)
-optimizer.fit(X_obs, y_obs, bounds=param_bounds)
+Esfera 2:   #R2      Rho2      Z2      Xc2
+        ([  200,     800,    500,      750])
